@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    animation: couleur 5s infinite ease-in-out;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.un{
+    animation: un 4s infinite linear;
+    position: absolute;
+    opacity: 0.6;
+}
+
+.deux{
+    animation: deux 2s infinite linear;
+    position: absolute;
+    top: 20%;
+    opacity: 0.8;
+}
+
+.trois{
+    animation: trois 1s infinite linear;
+    position: absolute;
+    top: 40%;
+    opacity: 0.7;
+}
+
+
+.quatre{
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    top: -30%;
+    margin-left: auto;
+    margin-right: auto;
+    /* transform: translateX(-50% -50%); */
+    text-align: center;
+    z-index: 2;
+    animation: 5s tourne infinite linear;
+}
+
+.cinq{
+    animation: trois 6s infinite linear;
+    position: absolute;
+    top: 70%;
+    opacity: 0.5;
+    width: 320px;
+    height: 450px;
+}
+
+@keyframes un {
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(2000px);
+    }
+}
+@keyframes deux {
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(2000px);
+    }
+}
+
+@keyframes trois {
+    0%{
+        transform: translateX(2000px);
+    }
+    100%{
+        transform: translateX(-200px);
+    }
+}
+
+@keyframes cinq {
+    0%{
+        transform: translateX(2000px);
+    }
+    100%{
+        transform: translateX(-200px);
+    }
+}
+
+@keyframes couleur {
+
+    0%{
+        background-color: #7F777D;
+        border: 50px solid #6C9BD9;
+    }
+    40%{
+        background-color: #A67233;
+        border: 50px solid #A63232;
+    }
+
+    60%{
+        background-color: #F2B9AC;
+        border: 50px solid #7F777D;
+    }
+    80%{
+        background-color: #A63232;
+        border: 50px solid #A67233;
+        
+    }
+    100%{
+        background-color: #7F777D;
+        border: 50px solid #A63232;
+    }
+}
+
+@keyframes tourne{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
