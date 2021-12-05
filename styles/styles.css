@@ -9,6 +9,34 @@ body{
     overflow: hidden;
 }
 
+main {
+    display: none;
+}
+
+audio {
+    display: none;
+}
+
+.cache {
+    display: hidden;
+}
+
+.clique {
+    margin: auto;
+    margin-top: 300px;
+    background-color: lightblue;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+}
+
+.apparait {
+    display: block;
+}
+
 img {
     max-width: 100%;
     height: auto;

@@ -1,3 +1,9 @@
-function(void) {
-    o.parentNode.removeChild(o), a.element.classList.add("cue-in"), a.element.style.display = "block", document.title = "Conga!"
-  }
+document.querySelector(".clique").addEventListener(
+  "click", go
+  )
+
+function go(){
+  document.querySelector("main").classList.toggle("apparait");
+  document.querySelector("audio").play();
+  document.querySelector(".clique").classList.toggle("cache");
+}
