@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto, 1fr, auto;
+    background-image: url("3.jpg");
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    height: 70vh;
+}
+
+header {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 0, 255);
+    font-size: 3em;
+    padding: 20px;
+    margin-bottom: 250px;
+}
+
+footer {
+    background-color: black;
+    color: rgb(255, 0, 255);
+    font-size: 3em;
+    padding: 20px;
+}
+
+.titre {
+    margin-top: 50px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.bier>P {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(255, 0, 255);
+    font-weight: bolder;
+}
+.amis {
+    width: 300px;
+    height: 300px;
+}
+
+.amis>P {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(255, 0, 255);
+    font-weight: bolder;
+}
+
+.amis>img {
+    height: 300px;
+    width: 300px;
+}
+.bier>img {
+    height: 300px;
+    width: 300px;
+}
+.sante {
+    width: 300px;
+    height: 300px;
+}
+
+.sante>P {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(255, 0, 255);
+    font-weight: bolder;
+}
+
+.sante>img {
+    height: 300px;
+    width: 300px;
+}
+
+.heureux>P {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(255, 0, 255);
+    font-weight: bolder;
+}
+
+.heureux>img {
+    height: 300px;
+    width: 300px;
+}
+
+.bier {
+    width: 300px;
+    height: 300px;
+    transform: translateY(700px);
+    animation: biere 1s ease-out forwards;
+}
+.amis {
+    width: 300px;
+    height: 300px;
+    transform: translateY(700px);
+    animation: biere 1s ease-out forwards 0.5s;
+}
+.sante {
+    width: 300px;
+    height: 300px;
+    transform: translateY(700px);
+    animation: biere 1s ease-out forwards 1s;
+}
+.heureux {
+    width: 300px;
+    height: 300px;
+    transform: translateY(700px);
+    animation: biere 1s ease-out forwards 1.5s;
+}
+
+@keyframes biere {
+    0%{
+        transform: translateY(700px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
